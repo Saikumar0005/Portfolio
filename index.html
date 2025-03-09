@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const ham = document.querySelector(".ham");
+        const navBar = document.querySelector(".nav-bar");
+
+        ham.addEventListener("click", function () {
+          navBar.classList.toggle("active");
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <header>
+      <div class="port">Portfolio</div>
+      <div class="ham">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+      <nav class="nav-bar">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skill">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="intro" id="home">
+      <h1>SAI KUMAR TIRUVIDHI</h1>
+    </section>
+
+    <section class="About" id="about">
+      <img id="pro" src="/photos/profile.jpg" alt="Profile" />
+      <div class="about-text">
+        <p class="profile-text">
+          👋 Hi, I'm Sai Kumar, a B.Tech Undergraduate from Vignan's Lara with
+          a passion for Frontend Development and an eagerness to learn new
+          technologies. <br />
+          💡 I love building interactive, user-friendly websites and always
+          strive to enhance my skills in modern web technologies like React.js,
+          JavaScript, HTML, CSS, and more. <br />
+          🚀 I'm enthusiastic about problem-solving and enjoy working on
+          real-world projects that improve user experiences. <br />
+          📌 Currently, I am exploring backend technologies to become a
+          Full-Stack Developer.
+        </p>
+        <div class="social">
+          <a
+            href="https://www.linkedin.com/in/saikumar-tiruvidhi/"
+            target="_blank"
+            ><img src="/photos/linkedin.png" alt="LinkedIn"
+          /></a>
+          <a href="https://github.com/Saikumar0005" target="_blank"
+            ><img src="/photos/github.png" alt="GitHub"
+          /></a>
+          <a href="https://leetcode.com/u/SaiKumar05/" target="_blank"
+            ><img src="/photos/leetcode.png" alt="LeetCode"
+          /></a>
+        </div>
+      </div>
+    </section>
+
+    <section id="skill" class="section3">
+      <div class="skills">
+        <h2>My Skills</h2>
+        <div class="skill">
+          <label>Python</label>
+          <input type="range" min="0" max="100" value="70" />
+        </div>
+        <div class="skill">
+          <label>C++</label>
+          <input type="range" min="0" max="100" value="60" />
+        </div>
+        <div class="skill">
+          <label>SQL</label>
+          <input type="range" min="0" max="100" value="70" />
+        </div>
+        <div class="skill">
+          <label>HTML</label>
+          <input type="range" min="0" max="100" value="80" />
+        </div>
+        <div class="skill">
+          <label>CSS</label>
+          <input type="range" min="0" max="100" value="80" />
+        </div>
+        <div class="skill">
+          <label>JavaScript</label>
+          <input type="range" min="0" max="100" value="70" />
+        </div>
+        <div class="skill">
+          <label>React.js</label>
+          <input type="range" min="0" max="100" value="70" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects  -->
+    <section id="projects">
+      <h2>My Projects</h2>
+    
+      <!-- Voice Assistant Project -->
+      <div class="project">
+        <h3>Voice Assistant</h3>
+        <p>
+          <ul type="disc">
+            <li >Voice-Controlled Automation:A Python-based voice assistant that processes commands, converts text to
+              speech, and performs tasks like web searches, media playback, and weather updates.</li>
+            <li>Key Functionalities: Uses pyttsx3 for text-to-speech, SpeechRecognition for voice input, Wikipedia for
+              information retrieval, pywhatkit for YouTube playback, and requests for weather updates.</li>
+            
+          </ul>
+        </p>
+        <a href="https://github.com/Saikumar0005/VoiceAssistant" target="_blank" class="github-link">GitHub</a>
+      </div>
+    
+      <hr />
+    
+      <!-- OCR-Based Text Extractor -->
+      <div class="project">
+        <h3>OCR-Based Text Extractor</h3>
+        <ul>
+          
+            
+            <p>
+              <ul type="disc">
+                <li>OCR with EasyOCR:Developed an OCR system using EasyOCR to extract and display text from images,
+                  with an option to save results as a Word document.</li>
+                <li>Text Preprocessing:Performed text preprocessing to remove noise and enhance the quality of extracted text.</li>
+                <li>Export Options:Supports saving extracted text in multiple formats like Word, PDF, or CSV for flexible
+                  usage.</li>
+              </ul>
+            </p>
+          
+        </ul>
+        <a href="https://github.com/Saikumar0005/OCR-Based-Text-Extractor" target="_blank" class="github-link">GitHub</a>
+      </div>
+    
+      <hr />
+    
+      <!-- Disease Prediction -->
+      <div class="project">
+        <h3>Disease Prediction</h3>
+        <p>
+          <ul type="disc">
+            <li>AI-Powered Diagnosis: Developed a machine learning model to analyze patient symptoms and medical data
+              for accurate disease prediction.</li>
+            <li>Healthcare Efficiency: Assisted in early diagnosis, reducing the risk of severe health conditions and improving
+              decision-making in healthcare.</li>
+              <li>Integration & Accessibility: Designed a web-based application using Streamlit and Python to enhance
+              patient outcomes and promote proactive healthcare management</li>
+          </ul>
+        </p>
+        <a href="https://github.com/Saikumar0005/Prediction" target="_blank" class="github-link">GitHub</a>
+      </div>
+      <div class="project">
+        <h3>Portfolio</h3>
+        <p>
+          <ul type="disc">
+            <li>Developed a Responsive Portfolio Website using HTML, CSS, and JavaScript, featuring a mobile-friendly navigation bar, dynamic skill progress bars, and smooth scrolling for an enhanced user experience.</li>
+            <li>Showcased Key Projects like a Voice Assistant, OCR-Based Text Extractor, and Disease Prediction Model, with detailed descriptions and GitHub links to demonstrate technical expertise.</li>
+            <li> Interactive Elements such as hover effects, a contact form, and modern design principles to create a visually appealing and user-friendly interface.</li>
+          </ul>
+        </p>
+        <a href="https://github.com/Saikumar0005/Portfolio" target="_blank" class="github-link">GitHub</a>
+      </div>
+    </section>
+
+
+    <section id="contact">
+      <div class="heading">
+        <h2>Contact Us</h2>
+      </div>
+      <div class="contact-form">
+        <input type="text" name="name" id="" placeholder="Enter your Name" /><br />
+        <input type="email" name="email" id="" placeholder="Enter your Email" /><br />
+        <textarea
+          name="message"
+          id=""
+          cols="30"
+          rows="10"
+          placeholder="Enter your Message"
+        ></textarea
+        ><br />
+        <button>Submit</button>
+      </div>
+    </section>
+
+    <footer class="footer-bottom">
+      <p>&copy; 2023 Sai Kumar Tiruvidhi. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
